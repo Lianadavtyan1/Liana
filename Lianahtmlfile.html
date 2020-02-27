@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html class="desktob mbr-site-loaded">
+ <head>
+  <title>Glxavor</title>
+ </head>
+   <style>
+   body {margin:0;}
+ul {
+  list-style-type: none;
+ position:fixed;
+ width:100%;
+ z-index:2;
+ 
+}
+li {
+  float: left;  
+}
+li a, .pages1 {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .pages:hover .pages1 {
+  background-color: #111;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+.pages1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;  
+}
+li.pages {
+   display: inline-block;
+}
+.pages-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+.pages-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.pages-content a:hover {background-color: #f1f1f1}
+
+.pages:hover .pages-content {
+  display: block;
+}
+
+.pages:hover .pages1 {
+  background-color: #3e8e41;
+}
+.more1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;  
+}
+li.more2 {
+   display: inline-block;
+}
+.more-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.more-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.more-content a:hover {background-color: #f1f1f1}
+
+.more2:hover .more-content {
+  display: block;
+}
+
+.more2:hover .more1 {
+  background-color: #3e8e41;
+}
+  .shop-now-btn a {
+    background-color:rgb(255, 120, 155);
+    color: black;
+    padding: 5px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 40px;
+  }
+  .shop-now-btn a:hover,
+  .shop-now-btn a:active {
+    background-color:  #ffff00;
+    
+  }
+  .shop-now-btn {
+    text-align: center;
+	transform:translate(-35%,-1100%);
+	
+  }
+  .sail-content {
+    font-size: 30px;
+    text-align: center;
+  }
+  .arrivals {
+    font-size: 70px;
+    text-align: center;
+  }
+  .pages-list ul {
+    visibility: hidden;
+  }
+  .pages-list:hover ul {
+    visibility: visible;
+  }
+  .w3 {
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translate(-100%,-100%);
+  }
+  .w4 {
+  position:absolute;
+  left:10%;
+  bottom:0;
+  transform:translate(-15%,-100%);
+  color:yellow;
+  font-size:25px;
+  }
+  div.gallery1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+   position: relative;
+     opacity: 0.5;
+	 }
+div.gallery1:hover {
+  opacity: 1.0;}
+	 
+div.gallery1 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 390px;
+  position: relative;
+  opacity: 0.5;
+}
+div.gallery2:hover {
+  opacity: 1.0;}
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery3 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 390px;
+   position: relative;
+   opacity: 0.5;
+
+}
+div.gallery3:hover {
+  opacity: 1.0;}
+div.gallery3 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery4 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 450px;
+   position: relative;
+   opacity: 0.5;
+
+}
+div.gallery4:hover {
+  opacity: 1.0;}
+div.gallery4 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery5 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 400px;
+  float: left;
+   position: relative;
+   opacity: 0.5;
+
+}
+div.gallery5:hover {
+  opacity: 1.0;}
+div.gallery5 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery6 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+   position: relative;
+   opacity: 0.5;
+
+}
+div.gallery6:hover {
+  opacity: 1.0;}
+div.gallery6 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery7 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+   position: relative;
+opacity: 0.5;
+
+   }
+   div.gallery7:hover {
+  opacity: 1.0;}
+div.gallery7 img {
+  width: 100%;
+  height: auto;
+}
+div.gallery8 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 370px;
+   position: relative;
+   opacity: 0.5;
+
+}
+div.gallery8:hover {
+  opacity: 1.0;}
+div.gallery8 img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 30px;
+  text-align: center;
+}
+  
+  
+.bottomright {
+  position: absolute;
+  color: red;
+  bottom: 20px;
+  right: 16px;
+  font-size: 30px;
+}
+
+  * {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 24.24%;
+  padding: 30px;
+  font-size:20px;
+
+   letter-spacing: 3px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#example1 {
+  background-image: url(https://wallscloud.net/uploads/cache/4141590333/nyu_jork_ssha_neboskreby_vecher_120170_1920x1080-1024x576-MM-90.jpg);
+ color:black;
+ font-family:verdana;
+ font-size:100%
+   width: 10%;
+   }
+
+   .v1 {
+   transform:translate(5%,-28%);
+   
+	}
+
+   p a, .pages1 {
+  display: inline-block;
+  color: black;
+
+ text-decoration: none;
+font-family:verdana;
+font-size:100%
+  width: 70%;}
+  p a:visited {
+  color: #3c3c3c;
+}
+p a:hover {
+  color: #ffffff;
+}
+
+  </style>
+<body style="background-color: LightGray">
+  <ul>
+  <li>
+  <a href=""><img src="https://pickupstickers.com/gallery_gen/39b5c0d86431dbf38dd5b49891a712fb.png" width="50" height="50"></a></li>
+  <li><a href="glxavor.html"><b>StoreM4</b></a></li>
+  <li style="float:left;" class="pages">
+  <a href="" class="pages1;"><b>Pages &#9660;</b></a>
+  <div class="pages-content"style="left:0;">
+  <a href="https://mobirise.com/html-templates/shop/">HTML Business Templates</a>
+  <a href="https://mobirise.com/html-templates/web-design-theme/">HTML Design Templates</a>
+  <a href="https://mobirise.com/html-templates/ecommerce/">eCommerce HTML Theme</a>
+  <a href="https://mobirise.com/html-templates/hotel/">Hotel HTML Template</a>
+  <a href="https://mobirise.com/html-templates/landing-page/">Landing Page HTML Template</a>
+  <a href="https://mobirise.com/html-templates/premium/">Premium HTML Themes</a>
+  <a href="https://mobirise.com/html-templates/profile/">HTML Resume TemplateTheme</a>
+  <a href="https://mobirise.com/html-templates/shopping/">Online Shopping HTML Template</a>
+  <a href="https://mobirise.com/html-templates/store/">Responsive HTML Theme</a>
+  <a href="#">HTML Templates</a>
+  <a href="#">More HTML Templates</a>
+  </div>
+  </li>
+  <li  class="more2">
+  <a href="" class="more1;"><b>More Templates &#9660;</b></a>
+  <div class="more-content">
+  <a href="https://mobirise.com/bootstrap-template/agency-template/">Agency Template</a>
+  <a href="https://mobirise.com/bootstrap-template/application-template/">Application Template</a>
+  <a href="https://mobirise.com/bootstrap-template/business-template/">Business Template</a>
+  <a href="https://mobirise.com/bootstrap-template/corporate-template/">Corporate Template</a>
+  <a href="https://mobirise.com/bootstrap-template/homepage-template/">Homepage Template</a>
+  <a href="https://mobirise.com/bootstrap-template/magazine-template/">Magazine Template</a>
+  <a href="https://mobirise.com/bootstrap-template/agency-template/multi-page-template.html">Multi Page Template</a>
+  <a href="https://mobirise.com/bootstrap-template/personal-website-template/">Personal Website Template</a>
+  <a href="https://mobirise.com/bootstrap-template/photography-template/">Photography Template</a>
+  <a href="https://mobirise.com/bootstrap-template/store-template/">Store Template</a>
+  <a href="https://mobirise.com/bootstrap-template/web-application-template/"> Web Application Template</a>
+  </div>
+  </li>
+  <li >
+  <a href=""><img src="https://www.pinclipart.com/picdir/big/396-3967338_mobirise-logo-clipart.png" width="50" height="40"></a></li>
+</ul>
+
+  <img src="https://flytothesky.ru/wp-content/uploads/2014/10/09.jpg">
+
+   
+  <div class="w3">
+    <h1 style="font-size:90px;text-align:center;color:rgb(255, 120, 155)"><p></p>Online Shopping HTML Template</h1>
+    <p></div>
+	<div class="w4">
+      <h1 class="page-title">New arrivals<sub><mark>Jeans</mark></sub><sup><mark>Shoes</mark></sup><sub><mark>Outerwear</mark></sub></h1>
+    </p>
+  <i><h1 style="font-size:25px;color:black;background-color:yellow;">Save over 25% on the purchase of new collection.</h1></i>
+  
+  
+  </div>
+    <div class="sail-content">
+      
+    </div>
+    <div class="shop-now-btn">
+      <a href="">
+        <h1 style="font-size:20px;text-align:center;">SHOP NOW</h1>
+      </a>
+    </div>
+	
+
+		<div class="sail-content">
+      <i>Shopping Cart HTML Template Free Download</i>
+    </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="arrivals">
+      <b>New Arrivals</b>
+    </div>
+	
+	
+	
+	
+	
+	<div class="gallery1">
+  <a target="_blank" href="https://2.bp.blogspot.com/-htPKl1-AYuk/VaJxlzS-7QI/AAAAAAAAGdA/1XzbRGLXRUg/s1600/IMG_1324.JPG">
+    <img src="https://2.bp.blogspot.com/-htPKl1-AYuk/VaJxlzS-7QI/AAAAAAAAGdA/1XzbRGLXRUg/s1600/IMG_1324.JPG">
+  </a>
+  <div class="bottomright"><b>Brown Glasses <br> $52</b></div>
+</div>
+<div class="gallery2">
+  <a target="_blank" href="https://image.nyigde.com/photos/board/78/board/3198_1_1024.jpg">
+    <img src="https://image.nyigde.com/photos/board/78/board/3198_1_1024.jpg">
+  </a>
+  <div class="bottomright"><b>Women's Shoes <br> $48</b></div>
+</div>
+<div class="gallery3">
+  <a target="_blank" href="https://kudago.com/media/images/place/1a/8f/1a8f1ac7f30550ba0bc23e50b7ef4d98.jpg">
+    <img src="https://kudago.com/media/images/place/1a/8f/1a8f1ac7f30550ba0bc23e50b7ef4d98.jpg">
+  </a>
+  <div class="bottomright"><b>Women's Backpack <br> $75  </b><del> $150</del></div>
+</div>
+<div class="gallery4">
+  <a target="_blank" href="https://wallbox.ru/wallpapers/main2/201728/14998391195965ba8f0f5ab5.92216592.jpg">
+    <img src="https://wallbox.ru/wallpapers/main2/201728/14998391195965ba8f0f5ab5.92216592.jpg">
+  </a>
+  <div class="bottomright"><b>Black Snapback <br> $29</b></div>
+ </div>
+ 
+ 
+ 
+ <div class="gallery5">
+  <a target="_blank" href="https://i1.wp.com/trailtopeak.com/wp-content/uploads/2018/03/DSC01922.jpg?resize=840%2C561&ssl=1">
+    <img src="https://i1.wp.com/trailtopeak.com/wp-content/uploads/2018/03/DSC01922.jpg?resize=840%2C561&ssl=1">
+  </a>
+  <div class="bottomright"><b>Black glasses <br> $71</b></div>
+</div>
+
+<div class="gallery6">
+  <a target="_blank" href="https://ae01.alicdn.com/kf/HTB1UpDdaEjrK1RkHFNRq6ySvpXaQ/Spring-Mens-Canvas-Shoes-New-2019-Men-Sneakers-Men-Lace-Up-Comfort-Flats-Shoes-Fashion-Casual.jpg">
+    <img src="https://ae01.alicdn.com/kf/HTB1UpDdaEjrK1RkHFNRq6ySvpXaQ/Spring-Mens-Canvas-Shoes-New-2019-Men-Sneakers-Men-Lace-Up-Comfort-Flats-Shoes-Fashion-Casual.jpg">
+  </a>
+  <div class="bottomright"><b>Men's Shoes <br> $43</b></div>
+</div>
+<div class="gallery7">
+  <a target="_blank" href="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F04%2Fthe-duffer-of-st-george-2013-spring-summer-backpacks-0.jpg?w=960&cbr=1&q=90&fit=max">
+    <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2013%2F04%2Fthe-duffer-of-st-george-2013-spring-summer-backpacks-0.jpg?w=960&cbr=1&q=90&fit=max">
+  </a>
+  <div class="bottomright"><b>Men's Backpack <br> $20</b></div>
+</div>
+<div class="gallery8">
+  <a target="_blank" href="http://gw.alicdn.com/bao/uploaded/i2/T1eUGzFJJXXXXXXXXX_!!0-item_pic.jpg">
+    <img src="http://gw.alicdn.com/bao/uploaded/i2/T1eUGzFJJXXXXXXXXX_!!0-item_pic.jpg">
+  </a>
+  <div class="bottomright"><b>Red Cap <br> $65</b></div>
+ </div>
+ 
+ 
+ 
+ <div class="clearfix">
+  <div class="box" >
+  <h2 style="color:rgb(255, 120, 155)">Just Arrived</h2>
+    <p>With so many styles of guys's clothes in Online Shopping HTML5 Template, shoes and accessories to pick from, you'll undoubtedly find your new wardrobe favourites in Make over's guys's sale. Update your street, work or formal wear with our most current enhancements.</p>
+   </div>
+  <div class="box">
+      <h2 style="color:rgb(255, 120, 155)">We Love</h2>
+    <p>Update your wardrobe with some of this period's must-haves of Online Shop HTML5 Template at a fraction of the price. Our women's apparel sale is all you have to produce an unique look, whether you're attire preparation for job or play. Save on a large range of our much-loved styles, consisting of bodycon mini gowns and also waterfall cardigans, to fake leather coats and peep toe boots.</p> 
+    </div>
+  <div class="box">
+    <h2 style="color:rgb(255, 120, 155)">Best Sellers</h2>
+    <p>Keep on-trend and in budget with Online Store HTML5 Template's variety of sale coats and coats. With falls jackets, dusters and more to choose from in a wide range of colours it's simple to stay fashionable and cosy without breaking the bank this season. Accompany with sale knitwear.</p>
+    </div>
+  <div class="box">
+    <h2 style="color:rgb(255, 120, 155)">Discounts</h2>
+    <p>With stunning price cuts in our females's tops sale, just how can you deficient your top priority? Update your streetwear wardrobe with off the shoulder tops and also bardot designs that match uncomplicated with your favorite denim, or opt for a crop top that you can wear day to night. From females's tee shirts to kimono tops and corset tops, there's a standout design for any kind of event in our Web Shop HTML Template ladies's tops sale</p>
+  </div>
+</div>
+ 
+
+ <div id="example1">
+  <br>
+  <br>
+  <br>
+  <div class="v1">
+  <p><b>Shopping Cart HTML Template</b></p>
+  <p><b>Free Download</b></p>
+
+  <p> <a href="file:///F:/khb/glxavor.html"><b>Return policy</b></a></p>
+  <p> <a href="file:///F:/khb/glxavor.html"><b>Search our store</b></a></p>
+  <p> <a href="file:///F:/khb/glxavor.html"><b>Blog</b></a></p>
+  <p> <a href="file:///F:/khb/glxavor.html"><b>Contact us</b></a></p>
+  <p> <a href="file:///F:/khb/glxavor.html"><b>About us</b></a></p>
+</div>
+  <br>
+<br>
+<br>
+<br>
+<br>
+  </div>
+</body>
+</html>
